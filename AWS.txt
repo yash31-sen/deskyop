@@ -1,0 +1,102 @@
+Multitenancy: sharing underlying hardware between virtual machines.
+Hypervizer: responsible for co-ordinating multitenancy, it is manged by aws
+	-> responsible for isolating the virtual machines form each other as they share resources from the host 
+this means EC2 instances are secure even though they share resources but one EC2 instance don't know about the other instance
+
+CaaS(Compute as a Servic model). 
+
+-------------------------------------------------------------------------------------- 
+
+EC2 isntance Families:
+1) Geeral Purpose (Balanced Resources -> Web servers, Code repositoies etc)
+2)Compute Optimized (compute intenssive tasks -> gaming servers, High performance computing, scientific modeling etc)
+3)Memory optimized (For memory intenssive tasks
+4)Accelerated otimized (floating popint number caculation, graphic processing, Data pattern matching, utilize hd acceleratr)
+5)Storage otimized (High pergormace for locally stored data)
+
+Reserved Instances require a contract length of either 1 year or 3 years. The workload in this scenario will only be running for 6 months.
+Dedicated Instances run in a virtual private cloud (VPC) on hardware that is dedicated to a single customer. They have a higher cost than the other response options, which run on shared hardware.
+On-Demand Instances fulfill the requirements of running for only 6 months. However, a Spot Instance would be the best choice because it does not require a minimum contract length, is able to withstand interruptions, and costs less than an On-Demand Instance.
+
+
+-----------------------------------------------------------------------------------------
+
+
+EC2 instance Pricing:
+
+
+Purchase options:
+1)On-Demand
+2)Saving Plans
+3)Reserved Instance 
+4)Spot instances 
+5)Dedicated host
+
+
+Scalliung Problems get solved with the help of Amazon EC2 auto scaling feature 
+
+
+Elastic Load Balancing:
+it is regional construct
+
+
+
+Messsaging and Queuing:
+Placing idea into the buffer is called as messagig and queing
+
+
+
+
+
+Amazon SQS:
+
+Send Store and Recieve message between software compontents at any volume 
+SQS queus are place where the message is placed untill they are processed
+aws uses underlying infrastucture to host those queus
+
+
+
+Amazon SNS:
+can be used to send notifications to the users (SMS, Emails etc)
+
+SNS topic:
+A channel for message to be delivered 
+
+-------------------------------
+In a microservices approach, application components are loosely coupled. In this case, if a single component fails, the other components continue to work because they are communicating with each other. The loose coupling prevents the entire application from failing. 
+as they are using queus
+-------------------------------
+
+Additional Compute services:
+
+1)Serverlses Computing 
+	-> AWS Lambda:
+		-> it is designed t run codes with in 15 minutes
+		-> 
+2) AWS container Serives:
+Container is a package for our code
+	-> AWS ECS(Elastic Container Service)
+	-> AWS EKS(Elastic Kubernetes Service) 
+		-> the conteiner in both the cases is docker container uses os level virtualization
+		-> both run on top of EC2	
+
+AWS Fargate(opens in a new tab) is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS. 
+
+
+
+________
+to host traditinal appliction
+Full access to the os
+use EC2
+
+____________
+Host Short running function
+Dont want tmanage underlying infrastucutre 
+Event Driven applciatin
+No provisioning to manage servers 
+use AWS lambda
+_____________
+
+for running Doker 
+Container based models 
+use EKS or ECS

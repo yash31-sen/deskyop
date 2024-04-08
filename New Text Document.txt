@@ -1,0 +1,54 @@
+def mergesort(array):
+if len(array)<=1:
+	return array
+	
+mid=s+(e-s)/2;
+l=mergersort(array[:mid])
+r=mergesort(array[mid:])
+  retrun merge(l,r);
+
+
+
+def merge(l,r):
+	res=[]
+	i=0
+	j=0
+	while i<len(l) and j<len(r):
+		if l[i]<=r[i]:
+			res.append(l[i];)
+			i+=1;
+		else:
+			j+=1
+	res+=l[i]
+	res+=r[i]
+	return  res
+
+
+n=int(input(""))
+l=[n];
+total_sum=0
+list_sum=0;
+for i in range(0,n):
+	temp=int(inut(""))
+	l[i]=temp;
+for j  range(0,n):
+	total_sum+=i
+
+for(i in range(0,len(l)):
+	list_sum+=l[i]
+
+print(total_sum-list_sum)
+
+
+
+
+n=int(input("")
+
+
+def printN(n):
+   #base case
+   if n==0:
+      retrun
+     print(printN(n-1))
+
+

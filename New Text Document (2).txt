@@ -1,0 +1,157 @@
+Problem Statement
+
+You are given a binary array of size n; You have to find the minimum cost to make every array element equal 1
+
+You can flip the bit, and the cost of flipping the bit is equal to the distance from the nearest opposite bit of it. If it is impossible to set all bits, then return -1.
+
+Input Format
+
+• The first line contains N(number of elements in the array)
+
+• Next, N lines contain an integer, and the ithine denotes the ith element in the array A.
+
+Constraints
+
+• 0 < N <= 10^5
+
+• 0 <= A[i] <= 1
+
+Output Format
+
+• Return a single integer according to the problem statement
+
+Evaluation Parameters
+
+• Sample Input
+
+3
+
+1
+
+0
+
+0
+
+• Sample Output
+
+2
+
+• Explanation
+
+We can flip the second bit for a cost of 1, as its distance from the first bit is 1.
+
+We can flip the third bit for a cost of 1, as its distance from the second bit is 1.
+
+total cost is 2
+
+Execution time limit
+
+10 seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problem Statement
+
+
+As shown in the image, you are tasked with making a triangle ABC You know the coordinates of point B and point C on the coordinate axis in the Cartesian plane, as well as the x-coordinate of point A You want to find the minimum integer value of the y coordinate such that the area of the triangle ABC is greater than or equal to k
+
+Input Format
+
+• The first line contains the Integer x2, which is the coordinate of point B.
+
+• The second line contains the integer y2 which is the y coordinate of point B
+
+The third line contains the integer x3 which is tex coordinate of point C
+
+The fourth line contains the integer y3 which is the y coordinate of point C
+
+The fifth line contains integer which is the x cordinate of point A.
+
+• The sixth line contains the integer k
+
+Constraints
+
+• 1 <= x2 < x1 < x3 <= 10^3
+
+• 1 <= y2 = y3 <= 10^7
+
+• 1 <= k <= 10^9
+
+Output Format
+
+• Return the minimum integer value of y1 as mentioned in the problem statement and also yl > y2
+
+Evaluation Parameters
+
+• Sample Input
+
+2
+
+3
+
+4
+
+3
+
+3
+
+5
+
+• Sample Output
+
+8
+
+
+
+
+Output Format
+
+• Return the minimum integer value of y1 amertonehe
+
+problem staternent and also yl > y2
+
+Evaluation Parameters
+
+• Sample Input
+
+2
+
+3
+
+4
+
+3
+
+3
+
+5
+
+• Sample Output
+
+8
+
+• Explanation
+
+Point B is (2,3), and point C is (4,3). The x coordinate of point A is 3 And the value of k is 5. In this situation, when the y coordrate of point A is 8, its area is greater than or equal to k. It is the smalest value of the y-coordinate such that y1 > y2, which satisfies all the conditions.
+Execution time limit
+
+10 seconds
+
+4
